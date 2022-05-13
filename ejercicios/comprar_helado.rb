@@ -11,7 +11,7 @@ puts "Que sabor de helado quiere: "
 helado = gets.chomp
 
 case helado
-when helado = ""
+when ""
     puts "El helado sin topping cuesta 1.90€."
 when "oreo"
     puts "El topping de oreo cuesta 1€."

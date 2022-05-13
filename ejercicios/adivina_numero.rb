@@ -5,9 +5,27 @@
 #Felicitaciones, lo lograste!
 
 num = rand(1...10)
-print "Adivina el número: "
-while num != gets.chomp.to_i
-  puts "Intenta Nuevamente ingresa un número: "
-end
-puts "Felicitaciones! adivinaste que era el:  #{num}"
+print "Ingresa tu nombre: "
+name = gets.chomp
+print 'Adivina el número: '
 
+#while num != gets.chomp.to_i
+#  puts 'Intenta Nuevamente ingresa un número: '
+#end
+#puts "Felicitaciones! adivinaste que era el:  #{num}"
+
+attemps = 0
+
+while attemps <= 3
+  if num > gets.chomp.to_i
+    attemps += 1
+    puts ' Intentalo de nuevo pista mayor al secreto'
+  elsif num < gets.chomp.to_i
+    attemps += 1
+    puts ' Intentalo de nuevo pista menor al secreto'
+  else
+    puts  " Felicitaciones #{name} el número: #{num} era el secreto"
+    puts  " Y en solo #{attemps} intentos"
+  end
+  print ' Final no va más lo siento!!!!' if attemps == 4
+end

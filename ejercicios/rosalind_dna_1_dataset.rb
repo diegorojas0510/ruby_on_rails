@@ -58,16 +58,18 @@ array.each do |character|
   when 'A'
     a+=1   
     aumento_caracter = "A"
+  else
+    puts "Error"
   end
-  # if character == 'T'
-  #   t +=  1   
-  # elsif character == 'C'
-  #   c +=  1 
-  # elsif character == 'G'
-  #   g +=  1 
-  # elsif character == 'A'
-  #   a +=  1   
-  # end
+  ## if character == 'T'
+  ##   t +=  1
+  ## elsif character == 'C'
+  ##   c +=  1
+  ## elsif character == 'G'
+  ##   g +=  1
+  ## elsif character == 'A'
+  ##   a +=  1
+  ## end
   #puts "Hay #{t} T, #{c} C, #{g} G, #{a} A"
   #puts "El caracter que aumento fue: #{aumento_caracter}"
 end
