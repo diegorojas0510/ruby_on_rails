@@ -52,4 +52,19 @@ array2.each_with_index do |elem, index|
 end
 
 
+array_person = ['Juan', 'Pedro', 'Maria', true, 1, 2, 3, 'Chrome', 'Firefox', 'Safari', 'Opera', 'IE']
+
+puts array_person.at(0) # forma de acceder al indice del array
+# puts
+# puts array_person.at(1) # forma de acceder al indice del array
+# puts
+# puts array_person[0] # forma de acceder al indice del array
+# puts
+# puts array_person.last # forma de acceder al ultimo elemento del array
+# puts
+# puts array_person.first  # forma de acceder al primer elemento del array
+# puts
+# print array_person.take(2) # forma de acceder a un rango de elemento del array
+# puts
+# print array_person.drop(2) # forma de acceder a un rango de elemento del array despues del rango
 

@@ -2,6 +2,7 @@
 
 print "Ingresa un número: "
 num1 = gets.chomp.to_i
+
 print "Ingresa otro número: "
 num2 = gets.chomp.to_i
 
