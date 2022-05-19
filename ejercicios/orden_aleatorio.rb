@@ -12,8 +12,10 @@ end
 names = Names.new('Juan')
 puts names.name
 
-names2 = Names.new(%w[Pepe Carlos Maria])
-print  names2.name.shuffle
+names2 = Names.new(%w[Pepe Carlos Maria])#convierte a
+puts  names2.name.shuffle
+
+
 
 
 
