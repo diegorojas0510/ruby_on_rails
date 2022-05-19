@@ -1,11 +1,11 @@
-#imprimir la hilera de pascal creando una función
+#imprimir la hilera de pascal creando una método
 
 
 def pascal(row_num)
   return [1] if row_num.zero?
 
   array = pascal(row_num - 1)
-  print array
+  #print array
   #print "Array #{array}"
   puts
   array_pascal = []

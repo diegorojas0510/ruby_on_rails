@@ -3,23 +3,17 @@
 # Luego le va preguntando por el nombre de cada persona y las va almacenando en un arreglo.
 # Al final muestra la lista de personas ordenadas de forma aleatoria.
 
-
-print 'Ingrese un número: '
-num = gets.chomp.to_i
-
-
-def requests_name
-  print 'Ingrese un nombre: '
-  gets.chomp
+class Names
+  attr_accessor :name
+  def initialize(name)
+    @name = name
+  end
 end
+names = Names.new('Juan')
+puts names.name
 
-array = []
-num.times do
-  array << requests_name
-  # puts array
-end
-
-print "Nombres #{array.shuffle}"
+names2 = Names.new(%w[Pepe Carlos Maria])
+print  names2.name.shuffle
 
 
 

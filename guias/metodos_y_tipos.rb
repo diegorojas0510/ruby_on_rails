@@ -5,9 +5,11 @@ class Person
   def initialize(name)#método contructor
     @name = name #este metodo solo se puede acceder desde la instancia
   end
+
   def whats_your_name
     @name
   end
+
   def eat
     puts "I'm eating"
   end

@@ -1,0 +1,16 @@
+body {
+  background-color: #8BC6EC;
+  background-image: linear-gradient(180deg, #8BC6EC 0%, #9599E2 6%, #ffffff 21%, #ffffff 60%, #ffffff 80%, #ffffff 100%);
+  
+}
+
+.card-title {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size:small;
+  background-color: aqua;
+
+}
+
+
+
+

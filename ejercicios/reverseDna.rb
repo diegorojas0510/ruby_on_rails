@@ -13,9 +13,9 @@ array = str.chars
 
 array.each_with_index do |character, i|
 
-    if character == 'A'
-        array[i] = 'AT'               
-    end
+  if character == 'A'
+    array[i] = 'AT'
+  end
 
 end
 
