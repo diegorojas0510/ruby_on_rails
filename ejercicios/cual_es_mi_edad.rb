@@ -8,19 +8,20 @@
 
 anio_actual = Time.now.year
 
-print "En que año naciste?: "
+print 'En que año naciste?: '
 anio_nacimento = gets.chomp.to_i
 
 if anio_nacimento == 2021
-   anio = anio_actual - anio_nacimento
-   puts "Tienes #{anio} año"
+  anio = anio_actual - anio_nacimento
+  puts "Tienes #{anio} año"
 elsif anio_nacimento > anio_actual
-   puts "!Imposible! Aún no has nacido."
+  puts '!Imposible! Aún no has nacido.'
 elsif anio_nacimento < 1900
-   puts "Si naciste en: #{anio_nacimento}, !Imposible! nadie tiene esa edad. "
+  puts "Si naciste en: #{anio_nacimento}, !Imposible! nadie tiene esa edad. "
 else
-   anio = anio_actual - anio_nacimento
-   puts "Tienes #{anio} años"
+  anio = anio_actual - anio_nacimento
+  puts "Tienes #{anio} años"
 end
+
 
 

@@ -1,4 +1,4 @@
-#Que es una clase es un molde el cual vamos a utilizar para crear algo
+# Que es una clase es un molde el cual vamos a utilizar para crear algo
 # siempre debe su nombre iniciar con mayuscula
 # TODO Clase vacia que representa a una persona
 class Person

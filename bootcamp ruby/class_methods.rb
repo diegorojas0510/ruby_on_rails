@@ -1,6 +1,6 @@
 class User
 
-  @@num_employee = 0 #variable de clase se define con @@variable
+  @@num_employee = 0 # variable de clase se define con @@variable
 
   def self.num_employee # los métodos de clase siempre inician con self. y no necesitan que se intancien la clase para poderlos llamar
    @@num_employee
@@ -14,38 +14,14 @@ class User
     @@num_employee += 1
   end
   # método getter se crea con el mismo nombre de la variable de instanciaque quiero acceder y devuelve la variable de instancia
-  def first_name
-    @first_name
-  end
+  attr_reader :first_name
 
-  def last_name
-    @last_name
-  end
-
-  def age
-    @age
-  end
-
-  def salary
-    @salary
-  end
+  attr_reader :last_name, :age, :salary
 
   # un método setter se llama igual a la variable que quiero cambiar pero terminado en igual y recibe el nuevo valor y lo que hace por dentro es asignarlo a la variable de instancia
-  def first_name=(first_name)
-    @first_name = first_name
-  end
+  attr_writer :first_name
 
-  def last_name=(last_name)
-    @last_name = last_name
-  end
-
-  def age=(age)
-    @age = age
-  end
-
-  def salary=(salary)
-    @salary = salary
-  end
+  attr_writer :last_name, :age, :salary
 
   def change_salary(num)
     @salary = num * @salary
@@ -54,7 +30,7 @@ class User
   def name_complete
     "#{@first_name} #{@last_name}"
   end
-  
+
 end
 
 employee = User.new('Diego', 'Rojas', 35, 1000000)
@@ -78,11 +54,12 @@ puts employee.salary
 
 puts '*' * 20
 
-#forma corta de clases
+# forma corta de clases
 class Perro
-  #attr_reader :raza, :edad, :nombre   # attr_reader asigna los getters para los atributos que se le indiquen lectura
-  #attr_writer :raza, :edad, :nombre
+  # attr_reader :raza, :edad, :nombre   # attr_reader asigna los getters para los atributos que se le indiquen lectura
+  # attr_writer :raza, :edad, :nombre
   attr_accessor :raza, :edad, :nombre  # este crea los dos métodos tanto getter como setter
+
   def initialize(raza, edad, nombre)
     @raza = raza
     @edad = edad

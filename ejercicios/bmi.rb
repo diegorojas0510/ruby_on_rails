@@ -8,6 +8,8 @@
 ##Tu BMI es 20.061728395061728
 #Como bono intenta redondear el número a un decimal.
 
+
+
 print"Ingresa tu peso: "
 peso = gets.chomp.to_i
 

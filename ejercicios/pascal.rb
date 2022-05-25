@@ -21,6 +21,7 @@ print pascal(1)
 print pascal(2)
 print pascal(3)
 print pascal(4)
+print pascal(10)
 
 
 
