@@ -13,19 +13,37 @@
 
 # pseudocodigo
 # 1-definir un método con dos parametros
-# 2-parametro 2 pasar otro de cualquier tipo
-# 3-parametro 1 pasar un arreglo
-# 4-realizar un ciclo donde evalue la posición del 2 parametro
-# 5-dentro del ciclo hacer una condición donde me evalue si la posición existe o no y retorne un valor
+# 2-parametro 1 es un array con los valores
+# 3-parametro 2 es el valor a buscar en el arreglo
+# 4-realizar un ciclo donde evalue si en la posicion actual esta el valor buscado
+# 5-retornar la posicion donde se encontro el valor
 
-# def search(number, *array)
-#   if array.include? number
-#     array.each_with_index do |element, index|
-#       puts "#{index}"
-#     end
-#   else
-#     -1
-#   end
-# end
+def search(array, number)
+  position = 0
+  array.each_with_index do |element, index|
+    if element == number
+      position = index
+      break
+    else
+      position = -1
+    end
+  end
+  position
+end
 
-search(2, 1, 2, 3)
+def search_2(array, number)
+  position = -1
+  array.each_with_index do |element, index|
+    position = index if element == number
+  end
+  position
+end
+
+def search_3(array, number)
+  position = array.index(number)
+  position = -1 unless position # nil
+end
+
+puts search_3([2, 1, 3], 7)
+
+

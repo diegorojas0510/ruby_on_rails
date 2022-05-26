@@ -13,11 +13,22 @@ module SavingsAccount
   end
 
   def self.annual_balance_update(balance)
-    #raise 'Please implement the SavingsAccount.annual_balance_update method'
-    interest_rate(balance)
+    #balance.positive? ? (balance + (interest_rate(balance) / 100.0) * balance) : (balance - (interest_rate(balance) / 100.0) * balance)
+    if balance.positive?
+      balance + ((interest_rate(balance) / 100.0) * balance)
+    else
+      balance - ((interest_rate(balance) / 100.0) * balance)
+    end
   end
 
   def self.years_before_desired_balance(current_balance, desired_balance)
     #raise 'Please implement the SavingsAccount.years_before_desired_balance method'
+    # Calcular la cantidad minima de años necesarios para alcanzar el saldo deseado
+    year = 0 # variable iniciada en 0
+    while current_balance < desired_balance # mientras el saldo deseado sea menor al saldo actual
+      current_balance = annual_balance_update(current_balance)# se iguala el saldo actual y se pasa lo que tenga el balance anual
+      year += 1 # se incrementa el año en 1
+    end
+    year # retorna el valor.
   end
 end
