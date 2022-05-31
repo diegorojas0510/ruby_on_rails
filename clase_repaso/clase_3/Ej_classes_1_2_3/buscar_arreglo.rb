@@ -45,5 +45,7 @@ def search_3(array, number)
 end
 
 puts search_3([2, 1, 3], 7)
+puts search_2([2, 1, 3], 7)
+puts search([2, 1, 3], 3)
 
 

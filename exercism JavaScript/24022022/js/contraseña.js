@@ -23,8 +23,8 @@ contrasena(""); // ""
 function contrasena(string) {// "e  a"
     var clave = "";
   
-    for(var i = 0; i < string.length; i++) { // i = 4  4 < 4 --> false
-      var caracter = string[i].toLowerCase(); //"e  a"[3].toLowerCase() --> "a"
+    for(let i = 0; i < string.length; i++) { // i = 4  4 < 4 --> false
+      let caracter = string[i].toLowerCase(); //"e  a"[3].toLowerCase() --> "a"
       if(caracter === " ") {
         caracter = ""; // caracter ahora es ""
       } else if(caracter === "a") {
@@ -50,6 +50,7 @@ function contrasena(string) {// "e  a"
   //console.log(contrasena("esta es una prueba")); // "3st43sun4pru3b4"
   //console.log(contrasena(" ")); // ""
   console.log(contrasena("e  a")); // "34"
+  console.log(contrasena("holacomo estas"))
 
 
   function contrasenaYony(string) {// "e  a"
@@ -66,5 +67,5 @@ function contrasena(string) {// "e  a"
 
     return clave;
   }
-
   console.log(contrasenaYony("e  a"))
+  console.log(contrasenaYony("holacomo estas"))
