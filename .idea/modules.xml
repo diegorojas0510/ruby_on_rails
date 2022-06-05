@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/green-baazar.iml" filepath="$PROJECT_DIR$/.idea/modules/green-baazar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/hola_mundo.iml" filepath="$PROJECT_DIR$/.idea/modules/hola_mundo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/ruby_on_rails.iml" filepath="$PROJECT_DIR$/.idea/ruby_on_rails.iml" />
     </modules>
   </component>

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 # Buscar en una matriz
-# Escribe un método llamado `buscar` que reciba dos argumentos: una matriz (un arreglo de arreglos) y otro argumento 
-# (de cualquier tipo). El método debe retornar un arreglo con la posición donde se encuentra el segundo argumento. 
+# Escribe un método llamado `buscar` que reciba dos argumentos: una matriz (un arreglo de arreglos) y otro argumento
+# (de cualquier tipo). El método debe retornar un arreglo con la posición donde se encuentra el segundo argumento.
 # Si no se encuentra debe retornar `nil`.
 # Por ejemplo, en el siguiente arreglo:
 # ruby
@@ -28,7 +28,7 @@ def matriz(matriz, number)
   matriz.each_with_index do |element, index|
     # p "Dentro primero #{index}"
     element.each_with_index do |elem, ind|
-      next unless elem == number 
+      next unless elem == number
 
       # p "Dentro del segundo #{index}"
       position = index, ind
@@ -61,6 +61,11 @@ def matriz3(matriz, number)
   end
 end
 
+def matriz4(matriz, number)
+  res = matriz.index(number)
+  res ? res : -1
+end
+
 
 p matriz([[1, 2, 3], [4, 5, 6], [7, 8, 9]], 9)
 p matriz([%w[s o l], %w[b i n]], 'l')
@@ -70,4 +75,6 @@ p matriz2([%w[s o l], %w[b i n]], 'l')
 p "+" * 50
 p matriz3([[1, 2, 3], [4, 5, 6], [7, 8, 9]], 9)
 p matriz3([%w[s o l], %w[b i n]], 'l')
+p "+" * 50
+p matriz4([%w[s o l], %w[b i n]], 'l')
 

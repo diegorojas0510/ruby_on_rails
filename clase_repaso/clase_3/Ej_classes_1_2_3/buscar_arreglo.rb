@@ -44,8 +44,18 @@ def search_3(array, number)
   position = -1 unless position # nil
 end
 
+def matriz4(matriz, number)
+  res = matriz.index(number)
+  res || -1 # Si res llega a ser nil entonces devuelve -1
+end
+
 puts search_3([2, 1, 3], 7)
 puts search_2([2, 1, 3], 7)
 puts search([2, 1, 3], 3)
+
+p "+" * 50
+
+p matriz4([1, 2, 3, 4, 5, 6, 7, 8, 9], 9)
+p matriz4([1, 2, 3, 4, 5, 6, 7, 8, 9], 11)
 
 
