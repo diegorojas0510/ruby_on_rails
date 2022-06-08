@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/project_rails/Bionic_Reading_Converter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/project_rails/cursos" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/project_rails/hola_mundo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/project_rails/store-baazar" vcs="Git" />
+  </component>
+</project>
